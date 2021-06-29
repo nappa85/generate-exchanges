@@ -306,7 +306,7 @@ pub fn generate_map(_: TokenStream) -> TokenStream {
         }),
         guard: None,
         fat_arrow_token: FatArrow::default(),
-        body: Box::new(Expr::Verbatim(quote!{ Err(rusty_money::MoneyError::InvalidCurrency) })),
+        body: Box::new(Expr::Verbatim(quote!{ Err(MoneyError::InvalidCurrency) })),
         comma: Some(Comma::default()),
     });
     // output result
